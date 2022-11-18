@@ -1,0 +1,479 @@
+*,
+html {
+    padding: 0;
+    margin: 0;
+    font-family: 'montserrat';
+}
+
+
+.navbar {
+    background-color: #EB2629;
+    width: 100%;
+}
+
+.navbar__menu {
+    height: 101px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.navbar__listItem {
+    color: #ffffff;
+    list-style-type: none;
+    /* padding: 20px;
+	margin: 20px; */
+    padding: 1.5%;
+    margin: 1%;
+    font-family: 'montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    position: relative;
+}
+
+.navbar__listItem a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navbar__listItem:hover {
+    background-color: #f84a4d;
+    transition: .3s ease-in-out;
+    transition-delay: .2s;
+    border-radius: 8px;
+}
+
+.navbar__menuDropdown {
+    display: none;
+}
+
+.navbar__listItem:hover .navbar__menuDropdown {
+    display: block;
+    position: absolute;
+    transition: .3s ease-in-out;
+    transition-delay: .2s;
+    left: 5px;
+    top: 100%;
+    background-color: #EB2629;
+    border-radius: 10px;
+}
+
+.navbar__menuDropdown ul {
+    display: block;
+    margin: 10px;
+}
+
+.navbar__menuDropdown ul li {
+    width: 200px;
+    padding: 10px;
+}
+
+.navbar__logoCote {
+    margin-left: 70px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: 435px;
+    height: 101px;
+}
+
+.navbar__menuResponsive {
+    display: none;
+}
+
+
+@media screen and (max-width:600px) {
+    body {
+        height: 4000px;
+        width: 100%;
+    }
+    .navbar-li {
+        display: none;
+    }
+    .navbar-bar {
+        color: #ffffff;
+        list-style-type: none;
+        padding: 1%;
+        margin: 1%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: right;
+        position: relative;
+    }
+    .navbar-img {
+        margin-left: 10px;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        width: 50%;
+        height: 80%;
+    }
+}
+
+.container {
+    margin: auto;
+    padding: auto;
+}
+
+.row {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    background-color: #010035;
+    box-sizing: border-box;
+    padding-top: 40px;
+    width: 100%;
+}
+
+.footer__column ul li a {
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer__column {
+    padding: 20px;
+}
+
+.footer__column h3 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: medium;
+    margin-bottom: 15px;
+}
+
+.footer__column ul li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.footer__column ul li a:hover {
+    color: #EB2629;
+    padding-left: 1px;
+    transition: 0.2s;
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 16px;
+    padding: 20px;
+    position: static;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+
+.tujuan {
+    padding: 20px;
+}
+
+.tujuan__jangka {
+    display: inline-flex;
+}
+
+.overview {
+    padding: 20px;
+}
+
+.tujuan h3 {
+    font-size: 32px;
+}
+
+.tujuan ol {
+    padding: 20px;
+    margin: 20px;
+}
+
+.overview h1 {
+    font-size: 24px;
+    padding-left: 20px;
+    font-weight: medium;
+    position: relative;
+    color: #010035;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.overview h1::before {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    background-color: #EB2629;
+    height: 2px;
+    box-sizing: border-box;
+    width: 120px;
+    margin: -5px
+}
+
+.tujuan h1 {
+    font-size: 24px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-weight: medium;
+    position: relative;
+    color: #010035;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.tujuan h1::before {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    background-color: #EB2629;
+    height: 2px;
+    box-sizing: border-box;
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.overview p {
+    color: rgb(120, 111, 111);
+    font-size: 16px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    font-weight: 500;
+    margin: 10px;
+    display: grid;
+}
+
+.tujuan p {
+    color: rgb(120, 111, 111);
+    font-size: 16px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.overview ol {
+    color: rgb(120, 111, 111);
+    list-style-type: style circle;
+    margin: 10px;
+    padding-left: 45px;
+}
+
+.tujuan ul {
+    color: rgb(120, 111, 111);
+    list-style-type: style circle;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.visi__misi {
+    display: inline-flex;
+}
+
+.visi {
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+.visi p {
+    font-weight: 500;
+    text-align: justify;
+}
+
+.visi h2 {
+    padding-left: 30px;
+    font-size: 20px;
+}
+
+.misi {
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+.misi ol li {
+    padding-top: 20px;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.misi h2 {
+    padding-left: 30px;
+    font-size: 20px;
+}
+
+.tujuan__jangka__panjang,
+.tujuan__jangka__pendek {
+    width: 100%;
+    text-align: center;
+}
+
+.tujuan__jangka__panjang h2,
+.tujuan__jangka__pendek h2 {
+    font-size: 20px;
+}
+
+.tujuan__jangka__panjang ul {
+    padding-left: 20px;
+}
+
+.tujuan__jangka__panjang ul li {
+    text-align: justify;
+}
+
+.tujuan__jangka__pendek ul {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.tujuan__jangka__pendek ul li {
+    text-align: justify;
+}
+
+.card {
+    box-shadow: 0 0.5px 3px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    place-content: center;
+}
+
+
+
+.sambutan {
+    padding: 20px;
+}
+
+.sambutan h1 {
+    font-size: 24px;
+    padding-left: 20px;
+    font-weight: medium;
+    position: relative;
+    color: #010035;
+    border-radius: 5px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.sambutan h1::before {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    background-color: #EB2629;
+    height: 2px;
+    box-sizing: border-box;
+    width: 125px;
+    margin-bottom: 15px;
+}
+
+
+.dekan {
+    display: inline-flex;
+}
+
+.dekan__fakultas {
+    padding: 20px;
+}
+
+.dekan__fakultas h2 {
+    font-size: 20px;
+    color: #EB2629;
+}
+
+.dekan__fakultas h3 {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.dekan__fakultas p {
+    color: rgb(120, 111, 111);
+}
+
+
+.kepala__cot {
+    display: inline-flex;
+}
+
+.kepala__cot__pusat {
+    padding: 20px;
+}
+
+.kepala__cot__pusat h2 {
+    font-size: 20px;
+    color: #EB2629;
+}
+
+.kepala__cot__pusat h3 {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.kepala__cot__pusat p {
+    color: rgb(120, 111, 111);
+    margin-bottom: 20px;
+}
+
+
+i {
+    margin-right: 12px;
+}
+
+@media (max-width:768px) {
+    .footer__column {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .visi__misi,
+    .tujuan__jangka {
+        display: block;
+    }
+    .tujuan__jangka__pendek {
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 25px;
+    }
+    .tujuan__jangka__panjang {
+        text-align: center;
+    }
+    .dekan,
+    .kepala__cot {
+        position: center;
+        display: block;
+    }
+    .dekan__fakultas {
+        display: block;
+    }
+    .dekan__foto {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .kepala__cot__foto {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .kepala__cot__pusat h2 {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .dekan__fakultas h2 {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
